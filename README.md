@@ -4,6 +4,10 @@
 
 Thefore, I decided to rectify this by creating my own. Please note that I am not an expert practitioner of Malayalam and the objective of creating a GitHub project was to encourage more qualified practitioners to improve on my subtitles. 
 
+# Where can I get the subtitles?
+[Right here.](https://github.com/tushtu/bharatham/releases)
+
+
 # Collaboration 
 I have generated an [HTML file](https://tushtu.github.io/bharatham/) which contains all audio clips and their corresponding translation. 
 
