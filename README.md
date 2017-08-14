@@ -17,9 +17,9 @@ If you feel that it can be improved, just edit the appropriate line in [Bharatha
 The video file was obtained from [YouTube](https://www.youtube.com/watch?v=UisSHGY1emA). I used [Subtitle Editor](https://apps.ubuntu.com/cat/applications/subtitleeditor/) to create the subtitles. 
 
 If you would like to load these subtitles into Subtitle Editor, you must 
-* Obtain the video linked above
-* Load it and [Bharatham.srt](Bharatham.srt).
-* (optional) Generate a waveform which will make it easier to segment the audio.
+* obtain the video linked above, 
+* load it and [Bharatham.srt](Bharatham.srt) and
+* (optional) generate a waveform which will make it easier to segment the audio.
 
 I used 
 * [splitaudio.py](splitaudio.py) to segment the movie audio into an OGG file for each subtitle (stored [here](site)) and 
