@@ -5,7 +5,7 @@
 Thefore, I decided to rectify this by creating my own. Please note that I am not an expert practitioner of Malayalam and the objective of creating a GitHub project was to encourage more qualified practitioners to improve on my subtitles. 
 
 # Collaboration 
-If you don't feel like going through all that, here's an alternative. I have generated an HTML file which contains the audio clip and the corresponding translation. 
+If you don't feel like going through all that, here's an alternative. I have generated an [HTML file](https://tushtu.github.io/bharatham/) which contains the audio clip and the corresponding translation. 
 
 If you feel that it can be improved, just edit the appropriate line in [Bharatham.srt](Bharatham.srt) and send me a pull request.
 
