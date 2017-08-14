@@ -7,7 +7,7 @@ from yattag import Doc
 doc, tag, text = Doc().tagtext()
 
 srt = 'Bharatham.srt'
-html = 'site/Bharatham.html'
+html = 'index.html'
 
 subs = pysrt.open(srt)
 
