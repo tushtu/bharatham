@@ -23,7 +23,7 @@ with tag('html'):
                 text(subtitle_id+'. '+sub.text)
                 doc.stag('br')
                 with tag('audio',controls="",preload="none"):
-                    doc.stag('source',src=subtitle_id+'.ogg',type="audio/ogg")
+                    doc.stag('source',src='site/'+subtitle_id+'.ogg',type="audio/ogg")
                 doc.stag('hr')
 
 with open(html,'w') as f:
