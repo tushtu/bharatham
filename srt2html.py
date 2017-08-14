@@ -14,7 +14,6 @@ subs = pysrt.open(srt)
 doc.asis('<!DOCTYPE html>')
 with tag('html'):
     with tag('body'):
-        text('Please be patient..')
         doc.stag('hr')
         # We do not want the first subtitle
         for idx,sub in enumerate(subs[1:]):
