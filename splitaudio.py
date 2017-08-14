@@ -5,7 +5,7 @@ import subprocess
 import shlex
 import pysrt
 
-video = 'Bharatham.mp4'
+video = '../Bharatham.mp4'
 srt   = 'Bharatham.srt'
 
 def split(cmd):
