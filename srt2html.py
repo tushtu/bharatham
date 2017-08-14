@@ -14,7 +14,7 @@ subs = pysrt.open(srt)
 doc.asis('<!DOCTYPE html>')
 with tag('html'):
     with tag('body'):
-        text('Please be patient. Your browser needs to load 1764 audio files ...')
+        text('Please be patient..')
         doc.stag('hr')
         # We do not want the first subtitle
         for idx,sub in enumerate(subs[1:]):
@@ -22,7 +22,7 @@ with tag('html'):
             with tag('p'):
                 text(subtitle_id+'. '+sub.text)
                 doc.stag('br')
-                with tag('audio',controls=""):
+                with tag('audio',controls="",preload="none"):
                     doc.stag('source',src=subtitle_id+'.ogg',type="audio/ogg")
                 doc.stag('hr')
 
