@@ -22,5 +22,5 @@ If you would like to load these subtitles into Subtitle Editor, you must
 * (optional) generate a waveform which will make it easier to segment the audio.
 
 I used 
-* [splitaudio.py](splitaudio.py) to segment the movie audio into an OGG file for each subtitle (stored [here](site)) and 
+* [splitaudio.py](splitaudio.py) to segment the movie audio into an OGG file for each subtitle and 
 * [srt2html.py](srt2html.py) to generate the [HTML file](https://tushtu.github.io/bharatham/) file for easier collaboration.
