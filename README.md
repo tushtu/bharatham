@@ -19,4 +19,4 @@ If you would like to load these subtitles into Subtitle Editor, you must
 
 I used 
 * [splitaudio.py](splitaudio.py) to segment the movie audio into an OGG file for each subtitle (stored [here](site)) and 
-* [srt2html.py](srt2html.py) to generate the [HTML](site/Bharatham.html) file for easier collaboration.
+* [srt2html.py](srt2html.py) to generate the [HTML file](https://tushtu.github.io/bharatham/) file for easier collaboration.
