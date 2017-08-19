@@ -8,6 +8,8 @@ doc, tag, text = Doc().tagtext()
 
 srt = 'Bharatham.srt'
 html = 'subtitles.html'
+site = 'site/'
+comments = 'comments/'
 
 subs = pysrt.open(srt)
 
@@ -22,8 +24,8 @@ with tag('html'):
                 text(subtitle_id+'. '+sub.text)
                 doc.stag('br')
                 with tag('audio',controls="",preload="none"):
-                    doc.stag('source',src='site/'+subtitle_id+'.ogg',type="audio/ogg")
-                    with tag('a',href="#",onclick="parent.window.frames['comments'].location = 'comments/" + subtitle_id + ".html'"):
+                    doc.stag('source',src=site+subtitle_id+'.ogg',type="audio/ogg")
+                    with tag('a',href="#",onclick="parent.window.frames['comments'].location = '"+comments+subtitle_id + ".html'"):
                         text('Comments')
                 doc.stag('hr')
 
