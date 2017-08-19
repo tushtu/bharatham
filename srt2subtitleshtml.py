@@ -16,17 +16,21 @@ subs = pysrt.open(srt)
 doc.asis('<!DOCTYPE html>')
 with tag('html'):
     with tag('body'):
+        text('Help improve the subtitles for the 1991 Malayalam classic ')
+        with tag('a',target="_blank",href="https://en.wikipedia.org/wiki/Bharatham"):
+            text('Bharatham')
         doc.stag('hr')
         # We do not want the first subtitle
         for idx,sub in enumerate(subs[1:]):
             subtitle_id = str(2+idx)
             with tag('p'):
-                text(subtitle_id+'. '+sub.text)
+                with tag('a',name=subtitle_id):
+                    text(subtitle_id+'. '+sub.text)
                 doc.stag('br')
                 with tag('audio',controls="",preload="none"):
                     doc.stag('source',src=site+subtitle_id+'.ogg',type="audio/ogg")
                 doc.stag('br')
-                with tag('a',href="#",onclick="parent.window.frames['comments'].location = '"+comments+subtitle_id + ".html'"):
+                with tag('a',href="subtitles.html#"+subtitle_id,onclick="parent.comments.location.href = '"+comments+subtitle_id + ".html'"):
                     text('Comments')
                 doc.stag('hr')
 
