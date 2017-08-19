@@ -29,6 +29,7 @@ with tag('html'):
                 doc.stag('br')
                 with tag('audio',controls="",preload="none"):
                     doc.stag('source',src=site+subtitle_id+'.ogg',type="audio/ogg")
+                    doc.stag('source',src=site+subtitle_id+'.mp3',type="audio/mpeg")
                 doc.stag('br')
                 with tag('a',href="subtitles.html#"+subtitle_id,onclick="parent.comments.location.href = '"+comments+subtitle_id + ".html'"):
                     text('Comments')
