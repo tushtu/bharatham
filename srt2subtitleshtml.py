@@ -18,7 +18,8 @@ with tag('html'):
     with tag('body'):
         text('Help improve the subtitles for the 1991 Malayalam classic ')
         with tag('a',target="_blank",href="https://en.wikipedia.org/wiki/Bharatham"):
-            text('Bharatham')
+            text('Bharatham!')
+        text("You can listen to the audio for each subtitle text by clicking the 'Play' button under the text. Click 'Comments' to open a page on the right where you can discuss improvements.")
         doc.stag('hr')
         # We do not want the first subtitle
         for idx,sub in enumerate(subs[1:]):
