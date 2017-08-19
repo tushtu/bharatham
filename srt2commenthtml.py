@@ -4,7 +4,6 @@
 import pysrt
 # For generating the HTML file
 from yattag import Doc
-doc, tag, text = Doc().tagtext()
 # For mkdir
 import os
 
@@ -17,6 +16,7 @@ subs = pysrt.open(srt)
 # We do not want the first subtitle
 for idx,sub in enumerate(subs[1:]):
   subtitle_id = str(2+idx)
+  doc, tag, text = Doc().tagtext()
   doc.asis('<!DOCTYPE html>')
   with tag('html'):
       with tag('body'):
@@ -24,8 +24,8 @@ for idx,sub in enumerate(subs[1:]):
               text("var idcomments_acct = '7720157ebbf514bb31abf7430d18bb2c';")
               text("var idcomments_post_id;")
               text("var idcomments_post_url;")
-      doc.stag('span',id="IDCommentsPostTitle",style="display:none"): 
-      doc.stag('script',type="text/javascript",src="https://www.intensedebate.com/js/genericCommentWrapperV2.js"):
+          doc.stag('span',id="IDCommentsPostTitle",style="display:none")
+          doc.stag('script',type="text/javascript",src="https://www.intensedebate.com/js/genericCommentWrapperV2.js")
 
   with open(comments + subtitle_id + '.html','w') as f:
       f.write(doc.getvalue())
