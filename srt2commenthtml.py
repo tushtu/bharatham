@@ -9,7 +9,7 @@ import os
 
 srt = 'Bharatham.srt'
 comments = 'comments/'
-site = 'site/'
+site = '../site/'
 
 os.mkdir(comments)
 
