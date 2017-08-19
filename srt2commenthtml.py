@@ -24,8 +24,10 @@ for idx,sub in enumerate(subs[1:]):
               text("var idcomments_acct = '7720157ebbf514bb31abf7430d18bb2c';")
               text("var idcomments_post_id;")
               text("var idcomments_post_url;")
-          doc.stag('span',id="IDCommentsPostTitle",style="display:none")
-          doc.stag('script',type="text/javascript",src="https://www.intensedebate.com/js/genericCommentWrapperV2.js")
+          with tag('span',id="IDCommentsPostTitle",style="display:none"):
+              pass
+          with tag('script',type="text/javascript",src="https://www.intensedebate.com/js/genericCommentWrapperV2.js"):
+              pass
 
   with open(comments + subtitle_id + '.html','w') as f:
       f.write(doc.getvalue())
